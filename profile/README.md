@@ -29,7 +29,7 @@ https://agent-production-9804.up.railway.app/.well-known/x402
 
 ### Source code
 
-https://github.com/SAVER-SI/agent
+https://github.com/SAVER-SI/saver-verifier
 
 ## Designed for autonomous agents
 
