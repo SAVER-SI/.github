@@ -27,7 +27,7 @@ https://agent-production-9804.up.railway.app/openapi.json
 
 https://agent-production-9804.up.railway.app/.well-known/x402
 
-### Source code
+### Repo (Public)
 
 https://github.com/SAVER-SI/saver-verifier
 
