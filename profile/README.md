@@ -17,15 +17,15 @@ It checks factual claims against live web evidence and returns structured, sourc
 
 ### Live service
 
-https://agent-production-9804.up.railway.app
+https://api.saververify.com
 
 ### OpenAPI
 
-https://agent-production-9804.up.railway.app/openapi.json
+https://api.saververify.com/openapi.json
 
 ### x402 discovery
 
-https://agent-production-9804.up.railway.app/.well-known/x402
+https://api.saververify.com/.well-known/x402
 
 ### Repo (Public)
 
@@ -36,3 +36,4 @@ https://github.com/SAVER-SI/saver-verifier
 ```text
 discover -> verify -> decide -> pay / act
 ```
+
