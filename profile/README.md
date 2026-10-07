@@ -6,9 +6,9 @@ SAVER builds independent verification services that autonomous software can disc
 
 ## SAVER Verifier
 
-SAVER Verifier is a production fact-verification API for AI agents.
+SAVER Verifier is a production verification service for autonomous AI agents.
 
-It verifies factual claims using live web search and source evidence and returns structured machine-readable results.
+It checks factual claims against live web evidence and returns structured, source-backed results before an agent acts, pays, or makes a decision.
 
 **Price:** 0.20 USDC  
 **Network:** Base Mainnet  
@@ -34,4 +34,5 @@ https://github.com/SAVER-SI/saver-verifier
 ## Designed for autonomous agents
 
 ```text
-discover -> inspect -> pay -> verify -> consume
+discover -> verify -> decide -> pay / act
+```
