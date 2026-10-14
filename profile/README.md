@@ -1,39 +1,57 @@
 # SAVER
 
-**Machine-to-machine verification infrastructure for autonomous AI agents.**
+**Trust infrastructure for autonomous AI agents.**
 
-SAVER builds independent verification services that autonomous software can discover, pay for, and consume without human interaction.
+SAVER builds machine-to-machine verification infrastructure for autonomous software. Our systems are designed to help agents verify external information with independent web evidence before they act, pay, or make consequential decisions.
 
 ## SAVER Verifier
 
-SAVER Verifier is a production verification service for autonomous AI agents.
+SAVER Verifier is our production factual claim verification API for autonomous AI agents.
 
-It checks factual claims against live web evidence and returns structured, source-backed results before an agent acts, pays, or makes a decision.
+It combines live web search, source selection, evidence evaluation, and structured output in a single machine-readable service.
 
-**Price:** 0.20 USDC  
-**Network:** Base Mainnet  
-**Payment:** x402  
-**Endpoint:** `POST /verify`
+**Production:** `https://api.saververify.com`  
+**Endpoint:** `POST /verify`  
+**Price:** `0.20 USDC` per verification  
+**Network:** Base Mainnet (`eip155:8453`)  
+**Payments:** x402 v2, exact scheme
 
-### Live service
+SAVER Verifier returns structured verification results including:
 
-https://api.saververify.com
+- verification status
+- confidence
+- explanation
+- evidence
+- cited sources
 
-### OpenAPI
+It is intended as an independent evidence signal, not as a replacement for an agent's own authorization, wallet, or security policies.
 
-https://api.saververify.com/openapi.json
+## Developer access
 
-### x402 discovery
+| Resource | URL |
+| --- | --- |
+| Website | https://saververify.com |
+| API | https://api.saververify.com |
+| Public repository | https://github.com/SAVER-SI/saver-verifier |
+| OpenAPI 3.1 | https://api.saververify.com/openapi.json |
+| x402 discovery | https://api.saververify.com/.well-known/x402 |
+| LLM discovery | https://api.saververify.com/llms.txt |
 
-https://api.saververify.com/.well-known/x402
+## Machine-native by design
 
-### Repo (Public)
-
-https://github.com/SAVER-SI/saver-verifier
-
-## Designed for autonomous agents
+SAVER Verifier is built for autonomous, programmatic use:
 
 ```text
-discover -> verify -> decide -> pay / act
+discover -> inspect -> pay -> verify -> consume
 ```
 
+The service exposes machine-readable discovery, an OpenAPI contract, x402 payment requirements, and structured verification responses without requiring a traditional API-key subscription workflow.
+
+## Repositories
+
+- [saver-verifier](https://github.com/SAVER-SI/saver-verifier) — public developer documentation, integration examples, OpenAPI, and agent skill source
+- [saver-site](https://github.com/SAVER-SI/saver-site) — official SAVER Verifier website
+
+---
+
+[SAVER Verifier](https://saververify.com) · [API](https://api.saververify.com) · [GitHub](https://github.com/SAVER-SI/saver-verifier)
