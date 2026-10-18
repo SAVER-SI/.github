@@ -1,6 +1,6 @@
 # SAVER
 
-**Trust infrastructure for autonomous AI agents.**
+**Independent factual checks for autonomous agent research and reports.**
 
 SAVER builds machine-to-machine verification infrastructure for autonomous software. Our systems are designed to help agents verify external information with independent web evidence before they act, pay, or make consequential decisions.
 
@@ -13,7 +13,7 @@ It combines live web search, source selection, evidence evaluation, and structur
 **Production:** `https://api.saververify.com`  
 **Recommended endpoint:** `POST /v2/verify`  
 **Original response format:** `POST /verify`  
-**Price:** `0.20 USDC` per verification  
+**Price:** `0.20 USDC` per completed verification  
 **Network:** Base Mainnet (`eip155:8453`)  
 **Payments:** x402 v2, exact scheme
 
@@ -39,8 +39,11 @@ New integrations should use v2. Existing `/verify` clients retain their original
 | OpenAPI 3.1 | https://api.saververify.com/openapi.json |
 | x402 discovery | https://api.saververify.com/.well-known/x402 |
 | LLM discovery | https://api.saververify.com/llms.txt |
+| Agent tool definition | https://api.saververify.com/agent-tool.json |
 | Actual paid examples | https://saververify.com/examples/ |
 | ClawHub skill v1.1.0 | https://clawhub.ai/saver-si/skills/saver-verifier |
+
+The three published result examples are actual operator-funded purchases. Reading them is free; they are demonstrations, not an independent accuracy benchmark.
 
 ## Machine-native by design
 
