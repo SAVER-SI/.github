@@ -53,7 +53,7 @@ SAVER Verifier is built for autonomous, programmatic use:
 discover -> inspect -> pay -> verify -> consume
 ```
 
-The service exposes machine-readable discovery, an OpenAPI contract, x402 payment requirements, and structured verification responses without requiring a traditional API-key subscription workflow.
+The service exposes machine-readable discovery, an OpenAPI contract, x402 payment requirements, and structured verification responses without requiring a traditional API-key subscription workflow. Invalid requests include machine-readable correction guidance before payment. Verification uses POST with JSON; GET/HEAD returns 405 with Allow: POST.
 
 ## Repositories
 
