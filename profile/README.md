@@ -11,7 +11,8 @@ SAVER Verifier is our production factual claim verification API for autonomous A
 It combines live web search, source selection, evidence evaluation, and structured output in a single machine-readable service.
 
 **Production:** `https://api.saververify.com`  
-**Endpoint:** `POST /verify`  
+**Recommended endpoint:** `POST /v2/verify`  
+**Original response format:** `POST /verify`  
 **Price:** `0.20 USDC` per verification  
 **Network:** Base Mainnet (`eip155:8453`)  
 **Payments:** x402 v2, exact scheme
@@ -21,10 +22,12 @@ SAVER Verifier returns structured verification results including:
 - verification status
 - confidence
 - explanation
-- evidence
+- evidence linked to source IDs (v2)
 - cited sources
 
 It is intended as an independent evidence signal, not as a replacement for an agent's own authorization, wallet, or security policies.
+
+New integrations should use v2. Existing `/verify` clients retain their original string-evidence response format. Confidence is model-assessed, not a calibrated probability.
 
 ## Developer access
 
@@ -36,6 +39,8 @@ It is intended as an independent evidence signal, not as a replacement for an ag
 | OpenAPI 3.1 | https://api.saververify.com/openapi.json |
 | x402 discovery | https://api.saververify.com/.well-known/x402 |
 | LLM discovery | https://api.saververify.com/llms.txt |
+| Actual paid examples | https://saververify.com/examples/ |
+| ClawHub skill v1.1.0 | https://clawhub.ai/saver-si/skills/saver-verifier |
 
 ## Machine-native by design
 
